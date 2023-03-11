@@ -37,7 +37,7 @@ fn main() {
             let tilt_angle = discretise(rad_angle.radius.asin(), angle);
             let norm_vec = Rotation3::from_axis_angle(&Vector3::z_axis(), angle_around_z)
                 * Rotation3::from_axis_angle(&Vector3::y_axis(), tilt_angle)
-                * Vector3::z(); // XXX YOU ARE HERE
+                * Vector3::z();
 
             let rgb_vec = norm_vec * 127.5 + Vector3::new(127.5, 127.5, 127.5);
             let rgb: Vec<u8> = rgb_vec.as_slice().iter().map(|x| x.ceil() as u8).collect();
