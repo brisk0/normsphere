@@ -5,6 +5,7 @@ edition = "2021"
 description = """
 Generate a sphere of tangent-space normals for use in hand-painting normal maps.\
 """
+licence = "Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
